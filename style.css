@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
+
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: sans-serif;
+}
+
+:root {
+     --darkBlue: #f2f9fe;
+     --gold: #a28457;
+     --grey: #3c5054;
+     --whiteGrey: #e8e8e8;
+     --white: #fff;
+     --font: "Caveat", cursive;
+}
+
+.container {
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: var(--darkBlue);
+}
+
+.container-inner {
+     width: 800px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     gap: 50px;
+}
+
+.site-name {
+     color: var(--gold);
+     font-size: 70px;
+     font-family: var(--font);
+}
+
+.question-blocks {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+
+.block {
+     border-radius: 10px;
+     padding: 20px;
+     background-color: var(--white);
+     box-shadow: 0px 1px 10px var(--whiteGrey);
+     overflow: hidden;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     height: 70px;
+     transition: all ease 0.5s;
+}
+
+.showBTN {
+     width: 30px;
+     height: 30px;
+     border-radius: 5px;
+     border: 2px solid var(--gold);
+     cursor: pointer;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.block-name {
+     display: flex;
+     justify-content: space-between;
+}
+
+.plus-line {
+     width: 5px;
+     height: 20px;
+     background-color: var(--gold);
+     border-radius: 5px;
+     background-position: center;
+     transition: all ease 0.5s;
+}
+
+.hiddenplus {
+     transform: rotate(90deg);
+}
+
+.minus-line {
+     background-position: center;
+     position: absolute;
+     border-radius: 5px;
+     width: 20px;
+     height: 5px;
+     background-color: var(--gold);
+}
+
+.question-name {
+     color: var(--grey);
+     font-family: var(--font);
+}
+
+.text {
+     letter-spacing: 3px;
+     color: var(--grey);
+}
+
+.showbar {
+     padding-bottom: 150px;
+}
